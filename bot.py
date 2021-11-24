@@ -7,7 +7,7 @@ bot = telebot.TeleBot(config.TOKEN)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-    sticker = open('pictures/welcome.webp', 'rb')
+    sticker = open('welcome.webp', 'rb')
     bot.send_sticker(message.chat.id, sticker)
 
     # Keybord
@@ -280,7 +280,7 @@ def callback_inline(call):
                 markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
                 item1 = types.KeyboardButton('Читать больше про банки')
                 markup.add(item1)
-                bot.send_message(call.message.chat.id, 'Через банк проходят в принципе все деньги. Всего в мире насчитывается: от 4,5 до 75 триллионов в долларовом эквиваленте. Однако банку невыгодно хранить наличку у себя, поэтому точного чилсла, сколько денег содержится у банка, нет.', reply_markup=markup)
+                bot.send_message(call.message.chat.id, 'Через банк проходят в принципе все деньги. Всего в мире насчитывается: от 4,5 до 75 триллионов в долларовом эквиваленте. Однако банку невыгодно хранить наличку у себя, поэтому точного числа, сколько денег содержится у банка, нет.', reply_markup=markup)
 
 
 

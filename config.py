@@ -1,1 +1,1 @@
-TOKEN = '2111636578:AAH5dF_gBEoSS4FwQhQlg0admr_2IBuBX3A'  # Telegram token 
+TOKEN = ''  # Telegram token 
